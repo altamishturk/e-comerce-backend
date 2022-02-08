@@ -1,0 +1,38 @@
+################## get all products ##################
+GET http://localhost:3000/api/v1/products/?page=3 HTTP/1.1
+
+
+
+################## create a new product ##################
+# POST http://localhost:3000/api/v1/product/new HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "name":"product12",
+#     "description": "this is product2",
+#     "price": 1000,
+#     "images": {"publicId":"pid","url":"url"},
+#     "category": "mobile"
+# }
+
+################## update product ##################
+# PUT  http://localhost:3000/api/v1/product/6200b1fc8cb5ca6b6b0f7747 HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "name": "product2",
+#     "description": "this is product2",
+#     "price": 2300,
+#     "images": {"publicId":"pid","url":"url"},
+#     "category": "laptop"
+# }
+
+
+# ################## delete product ##################
+# DELETE  http://localhost:3000/api/v1/product/6200b1fc8cb5ca6b6b0f7747 HTTP/1.1
+# Content-Type: application/json
+
+# ################## get one product ##################
+# GET  http://localhost:3000/api/v1/product/6200b1bf8cb5ca6b6b0f7744 HTTP/1.1
+# Content-Type: application/json
+
